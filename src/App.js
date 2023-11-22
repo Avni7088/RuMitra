@@ -14,7 +14,7 @@ function App() {
       <div className="App">
         <header className="App-header">
           <Navbar />
-          <h1>Olax Farmer Machinery Rental</h1>
+          <h1>RuMitra Farmer Machinery Rental</h1>
         </header>
         <main>
           <Routes>
