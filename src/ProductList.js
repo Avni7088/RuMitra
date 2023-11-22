@@ -1,30 +1,29 @@
 // src/ProductList.js
 import React, { useState } from 'react';
-import products from './products';
-import RentForm from './RentForm';
+import Product from './Product'; // Assuming this is the correct path to your Product component
 
 const ProductList = () => {
-  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [products, setProducts] = useState([
+    { id: 1, name: 'Product 1', description: 'Description 1', price: 50 },
+    { id: 2, name: 'Product 2', description: 'Description 2', price: 75 },
+    // Add more products as needed
+  ]);
 
   const handleRentClick = (product) => {
-    setSelectedProduct(product);
+    // Implement logic for handling rent button click
+    console.log(`Rent button clicked for product with id ${product.id}`);
   };
 
   return (
     <div>
       <h2>Product List</h2>
-      <ul>
+      <div className="row">
         {products.map((product) => (
-          <li key={product.id}>
-            <strong>{product.name}</strong>
-            <p>{product.description}</p>
-            <p>Price: ${product.price}</p>
-            <p>Available: {product.available} units</p>
-            <button onClick={() => handleRentClick(product)}>Rent</button>
-          </li>
+          <div key={product.id} className="col-md-4">
+            <Product {...product} onRentClick={handleRentClick} />
+          </div>
         ))}
-      </ul>
-      {selectedProduct && <RentForm product={selectedProduct} />}
+      </div>
     </div>
   );
 };

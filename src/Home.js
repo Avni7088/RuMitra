@@ -1,6 +1,6 @@
 // src/Home.js
 import React from 'react';
-import Product from './Product';
+import Product from './Product.js'; // Adjust the path as needed
 
 const Home = () => {
   const products = [

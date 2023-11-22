@@ -13,7 +13,7 @@ const RentForm = ({ product }) => {
     <div>
       <h2>Rent Form</h2>
       <p>{product.name}</p>
-      <p>Price: ${product.price}</p>
+      <p>Price: ₹{product.price}</p>
       <p>Available: {product.available} units</p>
       <label htmlFor="quantity">Quantity:</label>
       <input

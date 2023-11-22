@@ -6,14 +6,14 @@ const Product = ({ id, name, description, price, onRentClick }) => {
     <div className="card">
       {/* Assume you have product images in a 'public/images' folder */}
       <img
-        src={`/images/product${id}.jpg`}
+        src={`images/product${id}download.png`}
         className="card-img-top"
         alt={name}
       />
       <div className="card-body">
         <h5 className="card-title">{name}</h5>
         <p className="card-text">{description}</p>
-        <p className="card-text">Price: ${price}</p>
+        <p className="card-text">Price: ₹{price}</p>
         <button className="btn btn-primary" onClick={() => onRentClick(id)}>
           Rent
         </button>
