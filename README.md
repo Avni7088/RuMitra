@@ -79,7 +79,7 @@ We welcome and appreciate contributions from the community to make RuMitra even 
 
 ## Contact Information
 
-For inquiries, collaboration opportunities, or more information about RuMitra and other projects, contact us at [contact@analizer.co](mailto:contact@analizer.co).
+For inquiries, collaboration opportunities, or more information about RuMitra and other projects, contact us at [contact@analizer.co](mailto:analizarofficial.yahoo.com).
 
 Thank you for supporting RuMitra – where technology meets agriculture for a brighter future!
 
